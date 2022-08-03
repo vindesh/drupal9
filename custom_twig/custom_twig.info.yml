@@ -1,0 +1,6 @@
+name: 'Custom Twig Extension'
+type: module
+description: 'Custom Twig Extension Module'
+core_version_requirement: ^8.8 || ^9
+package: 'Custom'
+version: VERSION

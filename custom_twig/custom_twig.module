@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains custom_twig.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function custom_twig_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the custom_twig module.
+    case 'help.page.custom_twig':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom Twig Extension Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
